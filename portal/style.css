@@ -1,0 +1,353 @@
+/* @import, quando existem, devem ser o primeiro item de um arquivo css ... fonte selecionada do Google Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Definição de variaveis*/
+:root {
+    --cor-primaria: #550000;
+    --cor-secundaria: #ff7f2A;
+    --cor-secundaria-clara: #ffaf7b;
+    --cor-fundo-clara: #dddddd;
+    --cor-fundo-escura: #bbbbbb;
+    --cor-banca: #ffffff;
+    --cor-texto-escura: #777777;
+}
+
+/*CSS reset*/
+* { /*todos os elementos*/
+    padding: 0;
+    margin: 0;
+    /* exemplo de familia de fonte sem serifa
+    font-family: calibri, arial, sans;*/
+    
+    /* exemplo de familia de fonte com serifa
+    font-family: Georgia, 'Times New Roman', serif;*/
+
+    /* exemplo de familia de fonte monoespaçada
+    font-family: Consolas, 'Courier New', monospace;*/
+
+    font-family: Raleway, Calibre, Arial, sans;
+    font-size: 16px;
+    box-sizing: border-box; /*bordas e margens sejam consideradas no tamanho total do elemento*/
+}
+
+a{/*cor de todos os links do site*/
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+a:hover{/*mause passando em cima do link*/
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social {
+    background-color: transparent;
+}
+
+#social img {
+    width: 32px;
+}
+
+#social a {
+    color: var(--cor-banca);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#social a span {
+    margin-left: 6px;
+    display: none; /*esconder o texto dos links*/
+}
+
+#social a:hover span {
+    display: inline; /*mostra novamente o texto ao passar o mouse*/ 
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+nav {
+    background-color: var(--cor-secundaria); /*cor do fundo*/
+    color: var(--cor-banca); /*cor da fonte*/
+}
+
+#menu {
+    padding: 0 20px;
+}
+
+#menu li {
+    margin: 10px 0;
+
+}
+
+#menu a {
+    height: 100%;
+    padding: 10px;
+    transition: 300ms;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-banca);
+}
+
+#menu a:hover {
+    filter: brightness(0.8); /*diminui o brilho em 20%, deixando mais escuro*/
+}
+
+#menu-contraido {
+    
+    display: inline-block;
+    position: relative;
+}
+
+#menu-contraido input {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100; /*traz o input para cima*/
+    opacity: 0; /*esconde o input*/
+    display: none;
+}
+
+#menu-contraido span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius:  4px;
+    border: 2px solid white;
+    background-image: url(img/menu-icon-48x48.png);
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer; /*cursor de mãozinho*/
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#menu-contraido input:checked ~ span {/*seletor ~ : seleciona o proximo elemento (irmão)*/
+    background-image: url(img/close-icon-48x48.png);
+    
+}
+
+
+
+#content {
+    background-color: var(--cor-fundo-clara);
+    padding: 16px;
+    display: flex; /*este elemento e seus filhos usarão flexbox*/
+    flex-direction: row; /*os filhos ficarão em linha*/
+}
+main > a{
+    background-color: var(--cor-banca);
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 5px; /*bordas arredondadas*/
+    box-shadow: 3px 3px 3px rgba(0, 0,0 , 0.25);/*sombras / 1e2= deslocamento da sombra/ 3 espalhar a sombra*/
+    flex-grow: 1; /*1 unidade de largura (padrão)*/
+    
+}
+main{
+    /*flex-grow: 3;/*3 unidade de largura*/
+    width: 70%;
+}
+aside{
+    margin-left: 20px;
+    background-color: var(--cor-fundo-escura);
+    width: 30%;
+    border-radius: 5px;
+}
+
+main > article, aside > article { /*article que estão dentro de uma  main e aside*/
+    margin: 24px 0px; /*24px top/bottom ; 0 left/right */
+}
+
+main > h1, aside > h1 { /*apenas os h1 que são filhos diretos de main e aside*/
+    text-transform: uppercase; /*deixar o texto em maiusculas*/
+    color: var(--cor-secundaria);
+}
+article > h1 {/*apenas os h1 que são filhos diretos de article*/
+
+    margin-bottom: 5px;
+}
+article > h1 > a {
+    font-size: 1.5rem;
+}
+article > p {
+    color: var(--cor-texto-escura);
+}
+article > h2{
+    font-size: 0.8rem;
+    text-transform: uppercase; /*todas as letras em maiusculas*/
+}
+
+.destaque {
+    background-color: var(--cor-secundaria-clara);
+    padding: 24px;
+    border-radius: 4px; /*bordar levemente arredondadas */
+}
+.destaque p {
+    color: black;
+    font-size: 1.5rem;
+    
+}
+.destaque > h1 > a {
+    font-size:  2.5rem;
+}
+.destaque > h2 {
+    font-size: 1rem;
+
+}
+img{
+    border-radius: 4px;
+    
+}
+.destaque > div > figure > img {
+    width: 450px;
+    margin-right: 24px;    
+}
+article figcaption {
+    font-size: 0.5rem;
+}
+.foto-texto {
+    display: flex; /*este elemento e seus filhos usarão flexbo*/
+    flex-direction: row; /*os filhos ficarão em linha*/
+}
+
+aside figure  {
+    text-align: center;
+    /*display: block;
+    margin: 0 auto; /*margem auto a esquerda e a direita centraliza o elemento quando esse é dilplay block */
+    padding: 10px;
+}
+aside img{
+    max-width: 100%; /*largura maxima é 100% do pai*/
+   
+}
+
+
+aside> article > h1 > a {
+    font-size: 1rem;
+    color: black;    
+}
+aside> article > h1 {
+    margin: 0px 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    color: var(--cor-banca);
+    display: flex;   /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    flex-direction: row; 
+    justify-content: space-around;/*espaço automaticamente entre os itens de um flexbox*/
+}
+footer a {
+    color: var(--cor-banca);
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    border-right: 2px solid white; 
+}
+
+footer ul li:last-child{/*tirar a borda direita do ultimo li*/
+    border-right: none;
+}
+address {
+    padding-left: 10px;
+}
+
+footer > img {
+    width: 200px;
+    height: 100%;  
+    padding-left: 10px;  
+}
+
+/*regras para larguras especificas de tela*/
+@media screen and (max-width: 1020px) { /*breakpoint (ponto de quebra ) */
+    main { 
+        width: 60%;
+    }
+    aside {
+        width: 40%;
+    }
+    .foto-texto {
+        flex-direction: column; /*os filhos ficarão em coluna*/
+    }
+    .destaque > div > figure > img {
+        margin-right: 0px;
+        /* margin-bottom: 24px; */
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 800px) { 
+
+    #menu ul li { /*menu vertical*/
+        display: block;
+        margin: 0px;
+        padding: 12px 0;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    #menu-contraido ul { /*esconder menu vertical*/
+        display: none;
+    }
+
+    #menu-contraido input:checked ~ul { /*mostrar menu vertical*/
+        display: block;
+    }
+
+    #menu-contraido input, #menu-contraido span {
+        display: block;
+    }
+
+    #menu-contraido {
+        margin: 12px 0px;
+        width: 100%;
+    }
+
+    #content {
+        flex-direction: column; /*os filhos ficarão em coluna*/
+    }
+    main { 
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin-left:0px;
+    }
+
+    .destaque img { /*centralizar a imagem automaticamente*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer > * {
+        margin-bottom: 12px;
+    }
+    address {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /*colocar o logo principal e os icones de redes sociais em coluna*/
+
+}
+
+
