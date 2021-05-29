@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quebrada On Line</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-
+    <title>Quebrada On-Line</title>
 </head>
 <body>
-    <header> <!--Cabeçalho-->
-        <a href="./"> <img id="logo" src="img/qol-logo-300px.png" alt="Quebrada On Line"> </a>
+    <header> <!-- Cabeçalho --> 
+        <a href="./">
+            <img id="logo" src="img/qol-logo-300px.png" alt="Quebrada On-Line">
+        </a>
         <nav id="social">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="img/facebook-64x64.png" alt="Facebook">
+                    <a  href="#">
+                        <img src="img/facebook-64x64.png" alt="facebook">
                         <span>/quebrada.online</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="img/instagram-64x64.png" alt="Instagram">
+                    <a  href="#">
+                        <img src="img/instagram-64x64.png" alt="instagram">
                         <span>/quebrada.online</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="img/whatsapp-64x64.png" alt="Whatsapp">
-                        <span>(16) 6661 1111</span>
+                    <a  href="#">
+                        <img src="img/whatsapp-64x64.png" alt="whatsapp">
+                        <span>(16) 98765-4321</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <nav id="menu"> <!--Menu-->
-
+    <div>
+    <nav id="menu"> <!-- Menu -->
         <div id="menu-contraido">
-            <input type="checkbox">
+            <input type="checkbox" id="check-menu">
             <span></span>
             <ul>
                 <li><a href="./">Home</a></li>
@@ -55,81 +56,68 @@
                 <li><a href="#">Tecnologia</a></li>
             </ul>
         </div>
-       
-        
     </nav>
 
-    <div id="content"> <!--Area de Conteudo-->
-        <main> <!-- divisão principal do site-->
+    <div id="content"> <!-- Área de conteúdo -->
+        <main> <!-- Divisão principal do sites -->
+            <!-- Dentro de uma section, segundo as especificações, espera-se ter um título -->
             <h1>Notícias</h1>
-            <article class="destaque"><!--representa um artigo ou noticia-->
+
+            <article class="destaque"> <!-- Representa um artigo ou notícia -->
                 <h2>Social</h2>
-                <h1><a href="noticia01.html">Tião da Venda e Carla Manicure se casam após 15 anos de noivado</a></h1>
+                <h1><a href="noticia01.html">Tião da venda e Carla manicure se casam após 15 anos de noivado</a></h1>
                 <div class="foto-texto">
-                    <figure>
-                    <img src="img/noivos600x400.png" alt="Tião e Carla em seu casamento" title="foto: Aleksander Neplokhov">
-                    <figcaption>foto: Aleksander Neplokhov</figcaption>
-                    </figure>
-                <p>Festa de casamento foi interrompida pelos fiscais da Vigilancia Sanitária</p>
+                    <img src="img/noivos600x400.png" alt="Foto dos noivos" title="Foto: Aleksandr Neplokhov">
+                    <p>Festa de casamento foi interrompida pelos fiscais da vigilância sanitária</p>
                 </div>
             </article>
-
-            <article>
+  
+            <article> <!-- Representa um artigo ou notícia -->
                 <h2>Esportes</h2>
-                <h1><a href="#">Zagueiro Zé Parrudo quebra a perna de atacante rival em jogo valido pelo Varzeano</a></h1>
-                <p>O atacante André Finim, do Brejo FC, passa bem após cirurgia para colocação de pinos de titanio na perna</p>
+                <h1><a href="#">Zagueiro Zé Parrudo quebra a perna de atacante rival em jogo válido pelo Varzeano</a></h1>
+                <p>O atacante André Finim, do Brejo F. C., passa bem após cirurgia para colocação de pinos de titânio na perna direita</p>
             </article>
-
-            <article>
-                <h2>Polícia</h2>
+  
+            <article> <!-- Representa um artigo ou notícia -->
+                <h2>Policial</h2>
                 <h1><a href="#">Traficante é preso após tentar vender drogas a policial à paisana</a></h1>
-                <p>O traficante Moisés do Beco não percebeu que o "cliente" era da polícia</p>
+                <p>O traficante Moisés do Beco não percebeu que "cliente" era da polícia</p>
             </article>
-
-            <article>
+  
+            <article> <!-- Representa um artigo ou notícia -->
                 <h2>Economia</h2>
-                <h1><a href="#">Preço do litrão já se aproxima de R$15,00</a></h1>
-                <p>População revoltada contra o aumento de preços promovidos pelo Ademar do Bar</p>
+                <h1><a href="#">Preço do litrão já se aproxima de R$ 15</a></h1>
+                <p>População revoltada contra o aumento de preços promovidos por Ademar do Bar</p>
             </article>
-            
         </main>
-
-        <aside> <!--assunto secundario-->
+        <aside>
             <article>
-                <figure> 
-                    <img src="img/folhas320x240.png" alt="Foto de Folhas" title="Foto: Sohail">
-                    <figcaption>Foto: Sohail</figcaption>
-                </figure>
-                <h1><a href="#">Mulher do verdureiro emagrece 30kg tomando chá doce e choca a quebrada; SAIBA MAIS</a></h1>
+                <img src="img/folhas320x240.png" alt="Foto de folhas" title="Foto: sohail">
+                <h1><a href="#">Mulher do verdureiro emagrece 30kg tomando chá e coca na quebrada; SAIBA MAIS</a></h1>
             </article>
 
             <article>
-                <figure> 
-                    <img src="img/executivo320x240.jpg" alt="Executivo" title="Foto: Andrea Piacquadio">
-                    <figcaption>Foto: Andrea Piacquadio</figcaption>
-                </figure>
-                <h1><a href="#">Tenho uma oportunidade para você! NÃO É PIRÂMIDE</a></h1>
+                <img src="img/executivo320x240.jpg" alt="Homem bem sucedido" title="Foto: Andrea Piacquadio">
+                <h1><a href="">Tenho uma oportunidade para você! NÃO É PIRÂMIDE</a></h1>
             </article>
-            
+
         </aside>
-       
+
     </div>
 
-    <footer><!--rodapé-->
-        <img src="img/qol-logo-branco-300px.png" alt="Quebrada On-Line">
+    <footer> <!-- Rodapé-->
+        <img src="img/qol-logo-branco-300px.png" alt="Quebrada Online">
         <ul>
             <li><a href="#">Quem somos</a></li>
             <li><a href="#">Nossa missão</a></li>
             <li><a href="#">Comercial</a></li>
-        </ul>
+        </ul>   
         <address>
             Rua do Sobe e Desce, 33<br>
             Morro Alto de Cima/SP<br>
-            <a href="tel:+551666611111">(16) 6661 1111</a><br>
+            <a href="tel:+55166661111">(16) 6666-1111</a><br>
             <a href="mailto:contato@qol.com.br">contato@qol.com.br</a>
         </address>
-
-
     </footer>
 </body>
 </html>
