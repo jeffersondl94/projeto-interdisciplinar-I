@@ -3,13 +3,13 @@
 
 /* Definição de variáveis */
 :root {
-    --cor-primaria: #550000;
-    --cor-secundaria: #FF7F2A;
-    --cor-secundaria-clara: #FFAF7B;
-    --cor-fundo-clara: #DDDDDD;
-    --cor-fundo-escura: #BBBBBB;
-    --cor-texto-claro: #FFFFFF;
-    --cor-texto-escura: #121212;
+    --cor-primaria: #305e44ff;
+    --cor-secundaria: #ffc226ff;
+    --cor-secundaria-clara: #e7f4e7ff;
+    --cor-fundo-clara: #dddddd;
+    --cor-fundo-escura: #bbbbbb;
+    --cor-banca: #ffffff;
+    --cor-texto-escura: #232323;
 }
 
 /* CSS reset */
