@@ -3,9 +3,9 @@
 
 /*Definição de variaveis*/
 :root {
-    --cor-primaria: #305e44ff;
-    --cor-secundaria: #ffc226ff;
-    --cor-secundaria-clara: #e7f4e7ff;
+    --cor-primaria: #550000;
+    --cor-secundaria: #ff7f2A;
+    --cor-secundaria-clara: #ffaf7b;
     --cor-fundo-clara: #dddddd;
     --cor-fundo-escura: #bbbbbb;
     --cor-banca: #ffffff;
@@ -95,6 +95,8 @@ nav {
     transition: 300ms;
     background-color: var(--cor-secundaria);
     color: var(--cor-banca);
+    width: 100%;
+    display: block;
 }
 
 #menu a:hover {
@@ -105,6 +107,7 @@ nav {
     
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 
 #menu-contraido input {
@@ -159,6 +162,9 @@ main > a{
 main{
     /*flex-grow: 3;/*3 unidade de largura*/
     width: 70%;
+    background-color: var(--cor-banca);
+    border-radius: 5px;
+    padding: 10px;
 }
 aside{
     margin-left: 20px;
@@ -194,6 +200,7 @@ article > h2{
     background-color: var(--cor-secundaria-clara);
     padding: 24px;
     border-radius: 4px; /*bordar levemente arredondadas */
+    margin: 12px 0px;
 }
 .destaque p {
     color: black;
@@ -221,6 +228,34 @@ article figcaption {
 .foto-texto {
     display: flex; /*este elemento e seus filhos usarão flexbo*/
     flex-direction: row; /*os filhos ficarão em linha*/
+}
+
+.individual h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin: 12px 0px;
+}
+
+.individual p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: black;
+}
+.individual .foto-texto figure img {
+    width: 450px;
+    margin-right: 24px;
+}
+.individual .foto-texto figure {
+    text-align: center;
+}
+
+.individual .foto-texto{
+    flex-direction: column;
+}
+.individual .foto-texto p {
+    margin: 12px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 aside figure  {
@@ -347,7 +382,21 @@ footer > img {
 
 @media screen and (max-width: 640px) {
     /*colocar o logo principal e os icones de redes sociais em coluna*/
-
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .destaque > h1 > a, .individual h1{
+        font-size: 2rem;
+    }
+    .individual .foto-texto figure img {
+        max-width: 100%
+    }
+    aside {
+        margin-top: 10px;
+    }
 }
+
+
 
 
