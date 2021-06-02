@@ -333,7 +333,7 @@ footer img {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #menu {
         min-height: 88px;
         padding: 0;
