@@ -206,7 +206,13 @@ article > p {
 article > h2 {
     font-size: 0.8rem;
     text-transform: uppercase; /* Todas as letras em maiúsculas */
+    padding-bottom: 6px;
 }
+article > h3 {
+    font-size: 0.9rem;
+    padding-bottom: 6px;
+}
+
 
 .destaque {
     background-color: var(--cor-secundaria-clara);
