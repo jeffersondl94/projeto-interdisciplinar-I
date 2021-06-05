@@ -271,6 +271,10 @@ article > h3 {
     font-size: 1.15rem;
     font-weight: bold;
 }
+.individual li {
+    margin-left: 24px;
+    padding-bottom: 10px;
+}
 
 aside > article > img {
     display: block;
@@ -404,9 +408,12 @@ footer img {
 }
 
 @media screen and (max-width: 640px) {
-    /*
-        A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
-    */
+        .destaque > h1 > a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -414,8 +421,5 @@ footer img {
     header img {
         max-width: 100%;
     }
-
-    .destaque > h1 > a {
-        font-size: 2rem;
-    }
 }
+
