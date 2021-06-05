@@ -423,3 +423,7 @@ footer img {
     }
 }
 
+iframe {
+    max-width: 100%;
+    padding: 20px;
+}
