@@ -235,10 +235,12 @@ article > h3 {
 
 .foto-texto img {
     width: 450px;
+    height: 100%;
     margin-right: 24px;
     border-radius: 4px;
     /* Largura máxima limitada à largura do pai */
     max-width: 100%;
+    
 }
 
 .foto-texto {
@@ -284,6 +286,8 @@ aside > article > img {
     border-radius: 4px; /* Borda arredondada */ 
     /* Largura máxima é 100% da largura do pai */
     max-width: 100%;
+    width: 450px;
+    height: 100%;
 }
 
 aside > article > h1 > a {
