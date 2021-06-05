@@ -188,7 +188,7 @@ main article, aside article {   /* article que estão de dentro de main ou aside
 main > h1, aside > h1 {          /* Apenas os h1 que são filhos diretos de main ou aside */
     /* Deixar o texto em maiúsculas */
     text-transform: uppercase;
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
 article > h1 {    /* Só os h1 que são filhos diretos de article */
@@ -399,15 +399,13 @@ footer img {
     }
     footer {
         flex-direction: column;
+        text-align: center;
     }
     footer > * {    /* Todos os filhos DIRETOS de footer */
-        margin-bottom: 12px;
+        margin-bottom: 24px;
     }
     footer ul li:first-child {  /* Só o primeiro (first-child) li */
         padding-left: 0;
-    }
-    footer address {
-        text-align: right;
     }
 }
 
@@ -430,4 +428,19 @@ footer img {
 iframe {
     max-width: 100%;
     padding: 20px;
+}
+
+.institucional {
+    text-align: center;
+}
+
+.institucional h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin: 12px 0;
+}
+
+.institucional p {
+    font-size: 1.08rem;
+    margin-bottom: 12px;
 }
