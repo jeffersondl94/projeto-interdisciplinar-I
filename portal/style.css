@@ -156,7 +156,7 @@ nav {
 }
 
 #relac-contraido input, #relac-contraido span {
-    width: 600px;
+    width: 100%;
     height: 60px;
     position: absolute;
     top: -39.5px;
@@ -172,10 +172,10 @@ nav {
     display: block;
     border-radius: 4px;
     background-image: url('img/vejamais.png');
-    background-size: 200%;
     background-position: center;
     cursor: pointer; /* Cursor de mãozinha */
     display: none;
+    width: 100%;
 }
 
 #relac-contraido input:checked ~ span {
@@ -415,7 +415,7 @@ footer img {
     #relac-contraido {
         margin-top: 24px;
         width: 100%;
-        max-width: 100%;
+
     }
     #relac-contraido article {
         display: none;
@@ -424,9 +424,11 @@ footer img {
     #relac-contraido input, #relac-contraido span {
         display: block;
         max-width: 100%;
+        
     }
     #relac-contraido input:checked ~ article {
         display: block;
+        
     }
 
     #content {
@@ -495,6 +497,7 @@ iframe {
     margin-bottom: 12px;
 }
 
-.anuncio {
+#anuncio {
     margin: 24px 0 48px 0;
+    align-items: center;
 }
